@@ -1,0 +1,8 @@
+.textLight{
+    text-align: center;
+}
+.changeImg{
+    width: 150px;
+    height: 150px;
+    border: 10px solid transparent;
+}
