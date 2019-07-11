@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
@@ -34,7 +35,7 @@
         height: 100%;
         border: 1px solid blue;
     }
-    #data{
+    #data,#allData{
         display: none;
     }
 </style>
@@ -45,11 +46,28 @@
             Google Maps
         </h1>
     </center>
+
+    <?php
+    require 'education.php';
+        $edu = new education;
+
+        // truyền giữ liệu vào coll
+      $coll = $edu->getCollegesBlankLatLng();
+      $coll = JSON_ENCODE($coll);
+      //in dữ liệu;
+      echo '<div id="data">'.$coll.'</div>';
+
+
+    $alldata = $edu->getAllColleges();
+    $alldata = JSON_ENCODE($alldata);
+    //in dữ liệu;
+    echo '<div id="allData">'.$alldata.'</div>';
+    ?>
     <div id="map"></div>
 
 </div>
 <script type="text/javascript" src='js/googlemap.js'></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSXHGf36G5-dsh1XwGqdzZbmJlWOLtiKM&callback=loadMap" async defer></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCokQzEb_YovAouumHZboIeA1_4aAEsx8k&callback=loadMap" async defer></script>
 <script src="lib/jquery/jquery.min.js"></script>
 <script src="lib/bootstrap/js/bootstrap.min.js"></script>
 </body>

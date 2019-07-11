@@ -38,9 +38,9 @@
                                     <label for="Gender" class="col-sm-2 control-label">Address</label>
                                     <div class="col-sm-10">
                                         <select name="address" class="gender">
-                                            <option value="Đà Nẵng">Đà Nẵng</option>
-                                            <option value="Hà Nội">Hà Nội</option>
-                                            <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                                            <option value="Da Nang">Đà Nẵng</option>
+                                            <option value="Ha Noi">Hà Nội</option>
+                                            <option value="Ho Chi Minh">Hồ Chí Minh</option>
                                         </select>
                                     </div>
                                 </div>
@@ -49,6 +49,20 @@
                                     <div class="col-sm-10">
                                         <input type="name" name="price" required class="form-control"
                                                value="" id="price" placeholder="Price">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="col-sm-2 control-label">Lat</label>
+                                    <div class="col-sm-10">
+                                        <input type="name" name="lat" required class="form-control"
+                                               value="" id="lat" placeholder="Lat">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name" class="col-sm-2 control-label">Lng</label>
+                                    <div class="col-sm-10">
+                                        <input type="name" name="lng" required class="form-control"
+                                               value="" id="lng" placeholder="Lng">
                                     </div>
                                 </div>
                                 <div class="form-group">

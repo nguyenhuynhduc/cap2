@@ -23,11 +23,14 @@ class park extends Controller
         $parkName = $request->get('parkName');
         $address = $request->get('address');
         $price = $request->get('price');
-
+        $lat=$request->get('lat');
+        $lng=$request->get('lng');
         DB::table('park')->insert([
             'parkName'=>$parkName,
             'address'=>$address,
             'price'=>$price,
+            'lat'=>$lat,
+            'lng'=>$lng
         ]);
 
         $id=DB::table('park')->max('idPark');

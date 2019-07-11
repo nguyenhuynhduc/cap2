@@ -333,7 +333,7 @@ module.exports = function (grunt) {
 
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-DbConnect');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-requirejs');
@@ -354,12 +354,12 @@ module.exports = function (grunt) {
     'sass:dev'
   ]);
   grunt.registerTask('minify', ['uglify', 'sass:dist']);
-  grunt.registerTask('test', ['connect:tests', 'qunit', 'jshint']);
+  grunt.registerTask('test', ['DbConnect:tests', 'qunit', 'jshint']);
 
   var ciTasks = [];
 
   ciTasks.push('compile');
-  ciTasks.push('connect:tests');
+  ciTasks.push('DbConnect:tests');
 
   /*
   // grunt-saucelabs appears to be broken with Travis altogether now.
