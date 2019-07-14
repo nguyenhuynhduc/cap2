@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="34d11d41-53fd-4618-867e-c416367cf6b7" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="650">
+              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+              <folding>
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#2;n#ul#0;n#nav#0;n#div#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/function.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#SPAN#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>css</find>
+      <find>let's</find>
+      <find>Let's</find>
+      <find>h1</find>
+      <find>hourly</find>
+      <find>NavigationExpanded-item</find>
+      <find>&lt;h1&gt;Find Your City&lt;/h1&gt;</find>
+      <find>&lt;a class=&quot;NavigationExpanded-item&quot; href=&quot;https://spothero.com/account-settings/&quot;&gt;My Account&lt;/a&gt;</find>
+      <find>&lt;a class=&quot;NavigationExpanded-item&quot; href=&quot;https://spothero.com/cities/&quot;&gt;Cities&lt;/a&gt;</find>
+      <find>&lt;div class=&quot;FormElement-control&quot;&gt;&lt;input type=&quot;search&quot; class=&quot;FormElement-item&quot; name=&quot;search&quot; placeholder=&quot;Address, Place, City or Venue&quot; autofocus=&quot;&quot; autocomplete=&quot;off&quot; value=&quot;&quot;&gt;&lt;svg class=&quot;Icon Icon-search&quot; role=&quot;presentation&quot; viewBox=&quot;0 0 1024 1024&quot; width=&quot;20px&quot; height=&quot;20px&quot;&gt;&lt;path d=&quot;M725.6,644h-45.1l-15.7-16c55.4-66.6,89.2-152.9,89.2-247.4C753.9,170.4,588.5,0,384.3,0S14.8,170.4,14.8,380.5s165.5,380.5,369.6,380.5c91.8,0,175.6-34.7,240.2-91.7l15.7,16v46.4L924.5,1024l84.8-87.3L725.6,644L725.6,644z M384.3,644C243,644,128.5,526.1,128.5,380.5c0-145.5,114.5-263.4,255.9-263.4c141.3,0,255.9,118,255.9,263.4C640.2,526.1,525.6,644,384.3,644L384.3,644z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/div&gt;</find>
+      <find>FormElement-control</find>
+      <find>search</find>
+      <find>&lt;button class=&quot;Button Button-primary TabbedSearchControls-search&quot; type=&quot;submit&quot;&gt;Search&lt;/button&gt;</find>
+      <find>&lt;button class=&quot;Button Button-primary Button-with-icon-left TabbedSearchControls-nearby&quot; type=&quot;button&quot;&gt;&lt;svg class=&quot;Icon Icon-location-arrow&quot; role=&quot;presentation&quot; viewBox=&quot;0 0 1024 1024&quot; width=&quot;20px&quot; height=&quot;20px&quot;&gt;&lt;path d=&quot;M1021.2,43l-480.9,961.8c-6.4,12.8-16,19.2-28.9,19.2c-6.4,0-9.6,0-16-3.2c-9.6-6.4-12.8-12.8-16-22.4l-86.6-362.3l-365.5-93c-9.6,0-19.2-6.4-22.4-16c-9.6-16-3.2-35.3,12.8-41.7L979.5,4.5c16-9.6,35.3-3.2,41.7,12.8C1024.4,23.8,1024.4,36.6,1021.2,43z&quot;&gt;&lt;/path&gt;&lt;/svg&gt; Find Parking Near Me&lt;/button&gt;</find>
+      <find>&lt;footer class=&quot;HomeHero-values&quot;&gt;&lt;ul&gt;&lt;li class=&quot;HomeHero-value&quot;&gt;&lt;span&gt;Fast Prepay&lt;/span&gt;&lt;/li&gt;&lt;li class=&quot;HomeHero-value&quot;&gt;&lt;span&gt;Mobile Parking Pass&lt;/span&gt;&lt;/li&gt;&lt;li class=&quot;HomeHero-value&quot;&gt;&lt;span&gt;Easy Cancellation&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/footer&gt;</find>
+      <find>Home-cards Home-cards-horizontal</find>
+      <find>&lt;li class=&quot;AutoSuggestInput-item AutoSuggestInput-item-active&quot;&gt;Suburban Collection Showplace, Grand River Avenue, Novi, Michigan, Hoa Kỳ&lt;/li&gt;</find>
+      <find>AutoSuggestInput-suggestions</find>
+      <find>Home-content</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="50" />
+    <option name="y" value="23" />
+    <option name="width" value="1619" />
+    <option name="height" value="907" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="demo1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="demo1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo1" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="34d11d41-53fd-4618-867e-c416367cf6b7" name="Default Changelist" comment="" />
+      <created>1563032994217</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563032994217</updated>
+      <workItem from="1563032995410" duration="1361000" />
+      <workItem from="1563034467068" duration="1678000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3039000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="50" y="23" width="1619" height="907" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20608751" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/function.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#SPAN#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="650">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#li#2;n#ul#0;n#nav#0;n#div#0;n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

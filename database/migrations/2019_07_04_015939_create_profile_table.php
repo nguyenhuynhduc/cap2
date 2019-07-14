@@ -22,6 +22,7 @@ class CreateProfileTable extends Migration
             $table->string('phone');
             $table->string('email');
             $table->boolean('gender');
+            $table->integer('code');
             $table->timestamps();
         });
     }

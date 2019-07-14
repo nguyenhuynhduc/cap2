@@ -18,7 +18,8 @@ class CreateHistoryTable extends Migration
             $table->integer('idPark');
             $table->integer('idSlot');
             $table->integer('idUser');
-            $table->date('date');
+            $table->date('datecheckin');
+            $table->date('datecheckout');
             $table->integer('checkin');
             $table->integer('checkout');
             $table->integer('Cost');

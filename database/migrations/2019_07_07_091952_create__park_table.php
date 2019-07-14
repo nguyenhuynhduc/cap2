@@ -18,6 +18,8 @@ class CreateParkTable extends Migration
             $table->integer('price');
             $table->string('parkName');
             $table->integer('address');
+            $table->string('city');
+            $table->string('img');
             $table->timestamps();
         });
     }

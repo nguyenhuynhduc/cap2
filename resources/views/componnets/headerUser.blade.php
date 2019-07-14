@@ -1,111 +1,55 @@
 <!DOCTYPE html>
 <html>
 <head>
+
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>@yield('title')</title>
-    <!-- Tell the browser to be responsive to screen width -->
-    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
-    {{--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css" />--}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
-    {{--    <link href="{!! asset('/css/calender/fullcalendar.css') !!}" rel='stylesheet' />--}}
-    {{--    <link href='{!! asset('/css/calender/fullcalendar.print.css') !!}' rel='stylesheet' media='print' />--}}
-    {{--    <script src='{!! asset('/qt_admin/calender/js/jquery-1.10.2.js') !!}' type="text/javascript"></script>--}}
-    {{--    <script src='{!! asset('/qt_admin/calender/js/jquery-ui.custom.min.js') !!}' type="text/javascript"></script>--}}
-    {{--    <script src='{!! asset('/qt_admin/calender/js/fullcalendar.js') !!}' type="text/javascript"></script>--}}
-    <script src='{!! asset('/qt_admin/calender/js/calenderheader.js') !!}' type="text/javascript"></script>
-{{--    <link href='{!! asset('/css/calender/calender.css') !!}' rel='stylesheet' />--}}
-<!-- Bootstrap 3.3.7 -->
-    <link rel="stylesheet" href="{!! asset('/qt_admin/bower_components/bootstrap/dist/css/bootstrap.min.css') !!}">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="{!! asset('/qt_admin/bower_components/font-awesome/css/font-awesome.min.css') !!}">
-    <!-- Ionicons -->
-    <link rel="stylesheet" href="{!! asset('/qt_admin/bower_components/Ionicons/css/ionicons.min.css') !!}">
-    <!-- jvectormap -->
-    <link rel="stylesheet" href="{!! asset('qt_admin/bower_components/jvectormap/jquery-jvectormap.css') !!}">
-    <link rel="stylesheet"
-          href="{!! asset('/qt_admin/bower_components/datatables.net-bs/css/dataTables.bootstrap.min.css') !!}">
-    <!-- Theme style -->
-    <link rel="stylesheet" href="{!! asset('/qt_admin/dist/css/AdminLTE.min.css') !!}">
-    <!-- AdminLTE Skins. Choose a skin from the css/skins
-         folder instead of downloading all of them to reduce the load. -->
-    <link rel="stylesheet" href="{!! asset('/qt_admin/dist/css/skins/_all-skins.min.css') !!}">
-    <link rel="stylesheet" href="/qt_admin/bower_components/morris.js/morris.css">
-    <link rel="stylesheet" href="{!! asset('/qt_admin/developerEdit/registerAccount.css') !!}">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-          integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="{!!  asset('qt_admin/bower_components/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css') !!}">
-    <!-- Daterange picker -->
-    <link rel="stylesheet" href="{!! asset('qt_admin/bower_components/bootstrap-daterangepicker/daterangepicker.css') !!}">
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <link rel="stylesheet" href="{{ asset('/qt_admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css') }}">
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-    <!-- Google Font -->
-    <link rel="stylesheet"
-          href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
-
-    <link rel="stylesheet" href="{!! asset('adv/css/bootstrap.css') !!}">
-    <link rel="stylesheet" href="{!! asset('adv/css/font-awesome.css') !!}">
-    <link rel="stylesheet" href="{!! asset('adv/css/my.css') !!}">
-    <link rel="stylesheet" href="{!! asset('adv/css/menuleft.css') !!}">
-    <link rel="stylesheet" href="{!! asset('adv/css/admin.css') !!}">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-
-
-    <script type="text/javascript" src='{!! asset('/bootstrap/js/googlemap.js') !!}'></script>
-
-    <style>
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: 100px 100px 100px 100px;
-            grid-gap: 10px;
-            padding: 10px;
-
-        }
-
-        .grid-container > div {
-            background-color: rgba(255, 255, 255, 0.8);
-            text-align: center;
-            padding: 20px 0;
-            font-size: 30px;
-        }
-        .body1{
-            background-color: lightblue;
-        }
-
-    </style>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<div class="box-wpsau">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <body class="hold-transition skin-blue sidebar-mini">
-    <div class="wrapper">
-
-        <header class="main-header">
-
-            <!-- Logo -->
-            <a href="#" class="logo">
-                <!-- mini logo for sidebar mini 50x50 pixels -->
-                <span class="logo-mini"><b>B</b>O</span>
-                <!-- logo for regular state and mobile devices -->
-                <span class="logo-lg"><b>Hey </b> Park</span>
-            </a>
-
-            <!-- Header Navbar: style can be found in header.less -->
-            <nav class="navbar navbar-static-top">
-                <a href=""><button style="width: 100px;height: 50px" type="submit" class="btn btn-success pull-right" >Đăng Nhập</button></a>
-
-            </nav>
-        </header>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+        <a class="navbar-brand" href="#">Hey Park</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Trang Chủ <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Bãi Đổ Xe
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{{route('selectPark')}}?id=all">Tất Cả</a>
+                        <a class="dropdown-item" href="{{route('selectPark')}}?id=HN">Hà Nội</a>
+                        <a class="dropdown-item" href="{{route('selectPark')}}?id=DN">Đà Nẵng</a>
+                        <a class="dropdown-item" href="{{route('selectPark')}}?id=HCM">Hồ Chí Minh</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Bản Đồ
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="http://localhost/cap2/resources/views/Users/SelectDaNang.php?id=all">Tất Cả</a>
+                        <a class="dropdown-item" href="http://localhost/cap2/resources/views/Users/SelectDaNang.php?id=HN">Hà Nội</a>
+                        <a class="dropdown-item" href="http://localhost/cap2/resources/views/Users/SelectDaNang.php?id=DN">Đà Nẵng</a>
+                        <a class="dropdown-item" href="http://localhost/cap2/resources/views/Users/SelectDaNang.php?id=HCM">Hồ Chí Minh</a>
+                    </div>
+                </li>
+            </ul>
+            @if (session()->has('user'))
+                <a href='{{route('logout')}}'><button style='width: auto;height: auto' type='submit' class='btn btn-success pull-right' >Đăng Xuất</button></a>
+            @else
+                <a href='{{route('login')}}'><button style='width: auto;height: auto' type='submit' class='btn btn-success pull-right' >Đăng Nhập</button></a>
+            @endif
+        </div>
+    </nav>
     </body>
-

@@ -45,4 +45,11 @@ Route::get('','User\Home@getHome');
 
 Route::get('DanhSachBaiDoDN','User\SelectPark@getDaNang')->name('BT_SelectDN');
 
+Route::get('dangnhap','User\login@getLogin');
+Route::post('dangnhap','User\login@postLogin')->name('login');
+Route::get('dangxuat','User\login@getLogout')->name('logout');
+
+Route::get('danhsachbaidoxe','User\parkList@getParkList')->name('selectPark');
+
+
 

@@ -37,7 +37,7 @@
                                                     style="width: 224px; text-align: center">ID
                                             </th>
                                             <th
-                                                    style="width: 182px; text-align: center">Address
+                                                    style="width: 182px; text-align: center">city
                                             </th>
                                             <th
                                                     style="width: 199px; text-align: center">Cost

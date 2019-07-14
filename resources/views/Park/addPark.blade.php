@@ -35,9 +35,9 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="Gender" class="col-sm-2 control-label">Address</label>
+                                    <label for="Gender" class="col-sm-2 control-label">city</label>
                                     <div class="col-sm-10">
-                                        <select name="address" class="gender">
+                                        <select name="city" class="gender">
                                             <option value="Da Nang">Đà Nẵng</option>
                                             <option value="Ha Noi">Hà Nội</option>
                                             <option value="Ho Chi Minh">Hồ Chí Minh</option>

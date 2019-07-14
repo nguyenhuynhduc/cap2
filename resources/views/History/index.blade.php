@@ -50,7 +50,7 @@
                                             </th>
                                             <th  tabindex="0" aria-controls="example1" rowspan="1"
                                                  colspan="1" aria-label="Browser: activate to sort column ascending"
-                                                 style="width: 224px;text-align: center">Addres
+                                                 style="width: 224px;text-align: center">City
                                             </th>
                                             <th  tabindex="0" aria-controls="example1" rowspan="1"
                                                  colspan="1" aria-label="Browser: activate to sort column ascending"

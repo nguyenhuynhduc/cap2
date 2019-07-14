@@ -21,13 +21,13 @@ class park extends Controller
     public function postAddPark(Request $request)
     {
         $parkName = $request->get('parkName');
-        $address = $request->get('address');
+        $city = $request->get('city');
         $price = $request->get('price');
         $lat=$request->get('lat');
         $lng=$request->get('lng');
         DB::table('park')->insert([
             'parkName'=>$parkName,
-            'address'=>$address,
+            'city'=>$city,
             'price'=>$price,
             'lat'=>$lat,
             'lng'=>$lng

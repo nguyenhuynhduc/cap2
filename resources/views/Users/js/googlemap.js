@@ -14,7 +14,7 @@ function loadMap(){
 /*
     var cdata = JSON.parse(document.getElementById('data').innerHTML);
     geocoder = new google.maps.Geocoder();
-    codeAddress(cdata);*/
+    codecity(cdata);*/
 
 
     var allData = JSON.parse(document.getElementById('allData').innerHTML);
@@ -56,11 +56,11 @@ function  ShowAllColleges(allData) {
 
 }
 
-function codeAddress(cdata) {
+function codecity(cdata) {
     Array.prototype.forEach.call(cdata,function (data){
 
-        var address = data.parkName + ' ' + data.address;
-        geocoder.geocode( { 'address': address}, function(results, status) {
+        var city = data.parkName + ' ' + data.city;
+        geocoder.geocode( { 'city': city}, function(results, status) {
             if (status == 'OK') {
             map.setCenter(results[0].geometry.location);
             console.log(results[0].geometry.location);

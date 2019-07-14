@@ -10,7 +10,8 @@ class selectPark extends Controller
 {
     public function getDaNang()
     {
-        $user =DB::table('park')->where('address','Đà Nẵng')->get();
-        return view('User/selectDN')->with('list',$user);
+
+        $user =DB::table('park')->where('city','Đà Nẵng')->get();
+        return view('User/selectDN')->with('list',$user)->with('city','Đà Nẵng');
     }
 }
