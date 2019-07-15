@@ -51,5 +51,5 @@ Route::get('dangxuat','User\login@getLogout')->name('logout');
 
 Route::get('danhsachbaidoxe','User\parkList@getParkList')->name('selectPark');
 
-
+Route::get('danhsachchodoxe','User\slotList@getSlotList');
 

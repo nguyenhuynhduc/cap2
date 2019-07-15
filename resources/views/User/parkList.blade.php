@@ -6,22 +6,22 @@
 
     <br>
     <div class="box-wp">
-            <a href="" title="Trang chủ">Trang chủ </a>
-            <a>/</a>
-        <!-- /.box -->
+
         @if (isset($msg))
             <script type="text/javascript">alert("{{ $msg }}");</script>
         @endif
-
-            <a href="" title="Tin tức"> Danh Sách Bãi Đỗ Xe {{$city}}</a>
-
-            <a>/</a>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Trang Chủ</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Bãi Đỗ Xe {{$city}}</li>
+            </ol>
+        </nav>
 
         <a>
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" style="color: #0b93d5" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Tình Trạng
+                        &nbsp &nbsp;&nbsp Tình Trạng
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="{{route('selectPark')}}?id={{$code}}">Tất Cả</a>
@@ -33,19 +33,36 @@
 
     </div>
     <br>
-    <div class="row">
+    <div class="row" >
+        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         @foreach($list as $item)
-        <div class="col-lg-3 col-md-6 mb-4">
-            <div class="card h-100" style="text-align: center; ">
-                <a href="#"><img class="changeImg" style="height: 150px; width: auto" src="{!! asset('img/baido1.jpg') !!}"></a>
-                <div class="card-body" >
-                    <h4 class="card-title">
-                        <a href="#">{{$item->parkName}}</a>
-                    </h4>
-                    <h5>${{$item->price}}</h5>
+            <div class="item-ln" style="">
+                <div class="box">
+                    <div class="img" title="bai do xe" >
+                        <a>
+                            <img  src="{!! asset('img/caron.jpg') !!}">
+                        </a>
+                            @foreach( $count1 as $item1 )
+                            @if($item1['id']==$item->idPark)
+                                <p style="text-align: right;">{{$item1['count']}}/40 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</p>
+                                @break
+                            @endif
+                        @endforeach
+
+                    </div>
+                    <div style="text-align: center">
+                        <p>{{$item->parkName}}</p>
+                        <p>{{$item->price}} VNĐ</p>
+                    </div>
+                    <div>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        <a><button style="width: 100px" class="btn btn-success pull-left">Ngắn Hạn</button></a>
+                        &nbsp&nbsp&nbsp&nbsp&nbsp
+                        <a><button style="width: 100px" class="btn btn-danger pull-right">Dài Hạn</button></a>
+                    </div>
+
                 </div>
             </div>
-        </div>
             @endforeach
     </div>
 

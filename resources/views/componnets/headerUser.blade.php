@@ -7,6 +7,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>@yield('title')</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    {{--<link type="text/css" rel="stylesheet" href="{!! asset('slot/css/stylesVIP1.css') !!}" />
+    <link type="text/css" rel="stylesheet" href="{!! asset('slot/css/swiper.css" rel="stylesheet') !!}"/>
+    <link type="text/css" rel="stylesheet" href="{!! asset('slot/css/owl.carousel.min.css') !!}">
+    <link type="text/css" rel="stylesheet" href="{!! asset('slot/css/owl.theme.default.css') !!}">
+    <link type="text/css" rel="stylesheet" href="{!! asset('slot/css/jquery.mCustomScrollbar.css') !!}">
+    <script type="text/javascript" src="{!! asset('slot/js/jquery-1.11.0.js') !!}"></script>
+    <script type="text/javascript" src="{!! asset('slot/js/script4.js') !!}"></script>
+    <script type="text/javascript" src="{!! asset('slot/js/menudrop.js') !!}"></script>
+    <script type="text/javascript" src="{!! asset('slot/js/owl.carousel.min.js') !!}"></script>
+    <script type="text/javascript" src="{!! asset('slot/js/swiper.min.js') !!}"></script>
+    <script type="text/javascript" src="{!! asset('slot/js/ckeditor.js') !!}"></script>
+    <script type="text/javascript" src="{!! asset('slot/js/ckfinder.js') !!}"></script>--}}
+
+
+
+
 </head>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -38,7 +55,6 @@
                         Bản Đồ
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="http://localhost/cap2/resources/views/Users/SelectDaNang.php?id=all">Tất Cả</a>
                         <a class="dropdown-item" href="http://localhost/cap2/resources/views/Users/SelectDaNang.php?id=HN">Hà Nội</a>
                         <a class="dropdown-item" href="http://localhost/cap2/resources/views/Users/SelectDaNang.php?id=DN">Đà Nẵng</a>
                         <a class="dropdown-item" href="http://localhost/cap2/resources/views/Users/SelectDaNang.php?id=HCM">Hồ Chí Minh</a>
