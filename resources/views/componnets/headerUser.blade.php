@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>@yield('title')</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.css" rel="stylesheet" id="bootstrap-css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     {{--<link type="text/css" rel="stylesheet" href="{!! asset('slot/css/stylesVIP1.css') !!}" />
     <link type="text/css" rel="stylesheet" href="{!! asset('slot/css/swiper.css" rel="stylesheet') !!}"/>
     <link type="text/css" rel="stylesheet" href="{!! asset('slot/css/owl.carousel.min.css') !!}">
@@ -20,10 +22,6 @@
     <script type="text/javascript" src="{!! asset('slot/js/swiper.min.js') !!}"></script>
     <script type="text/javascript" src="{!! asset('slot/js/ckeditor.js') !!}"></script>
     <script type="text/javascript" src="{!! asset('slot/js/ckfinder.js') !!}"></script>--}}
-
-
-
-
 </head>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -37,7 +35,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Trang Chủ <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{{route('home')}}">Trang Chủ <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -62,7 +60,9 @@
                 </li>
             </ul>
             @if (session()->has('user'))
-                <a href='{{route('logout')}}'><button style='width: auto;height: auto' type='submit' class='btn btn-success pull-right' >Đăng Xuất</button></a>
+                <a href="{{route('account')}}">{{session()->get('name')}}</a>
+                &nbsp; &nbsp;
+                <a href='{{route('logout')}}'><button style='width: auto;height: auto' type='submit' class='btn btn-secondary pull-right' >Đăng Xuất</button></a>
             @else
                 <a href='{{route('login')}}'><button style='width: auto;height: auto' type='submit' class='btn btn-success pull-right' >Đăng Nhập</button></a>
             @endif

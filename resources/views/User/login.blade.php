@@ -14,6 +14,9 @@
 <div class="wrapper">
     <div class="container">
         <h1>Welcome</h1>
+        @if (isset($msg))
+            <script type="text/javascript">alert("{{ $msg }}");</script>
+        @endif
         <form action="{{ route('login') }}" method="post">
             {{ csrf_field() }}
 

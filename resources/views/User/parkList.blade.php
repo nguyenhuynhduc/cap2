@@ -4,7 +4,6 @@
 @endsection
 @section('contain')
 
-    <br>
     <div class="box-wp">
 
         @if (isset($msg))
@@ -40,7 +39,7 @@
                 <div class="box">
                     <div class="img" title="bai do xe" >
                         <a>
-                            <img  src="{!! asset('img/caron.jpg') !!}">
+                            <img  src="{!! asset('img/'.$item->img) !!}">
                         </a>
                             @foreach( $count1 as $item1 )
                             @if($item1['id']==$item->idPark)
@@ -56,9 +55,9 @@
                     </div>
                     <div>
                         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                        <a><button style="width: 100px" class="btn btn-success pull-left">Ngắn Hạn</button></a>
+                        <a><button  style="width: 100px" class="btn btn-success pull-left">Ngắn Hạn</button></a>
                         &nbsp&nbsp&nbsp&nbsp&nbsp
-                        <a><button style="width: 100px" class="btn btn-danger pull-right">Dài Hạn</button></a>
+                        <a href="{{route('timeLong')}}?id={{$item->idPark}}"><button  style="width: 100px" class="btn btn-danger pull-right">Dài Hạn</button></a>
                     </div>
 
                 </div>

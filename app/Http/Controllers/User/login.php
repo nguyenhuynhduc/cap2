@@ -23,9 +23,9 @@ class login extends Controller
             ->where('password', $pass)
             ->first();
         if ($user) {
-            session(['user' => $user]);
-
-            return redirect()->intended();
+            session(['user' => $user->idUser]);
+            session(['name' => $user->fullname]);
+            return redirect()->back();
         }
         else{
             return redirect()->back();

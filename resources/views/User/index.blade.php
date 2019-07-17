@@ -103,7 +103,7 @@
                     <ul>
                         <li>
                             <div class="NavigationExpanded-item-container">
-                                <a class="NavigationExpanded-item" href="{{route('login')}}">
+                                <a class="NavigationExpanded-item" href="{{route('account')}}">
                                     Tài Khoản
                                 </a>
                             </div>

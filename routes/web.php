@@ -41,7 +41,7 @@ Route::get('deletePark','Admin\park@deletePark')->name('BT_deletePark');
 Route::get('editInforPark','Admin\park@PostInforPark')->name('BT_editInforPark');
 Route::post('editInforPark','Admin\park@editInforPark')->name('editPark');
 
-Route::get('','User\Home@getHome');
+Route::get('','User\Home@getHome')->name('home');
 
 Route::get('DanhSachBaiDoDN','User\SelectPark@getDaNang')->name('BT_SelectDN');
 
@@ -53,3 +53,9 @@ Route::get('danhsachbaidoxe','User\parkList@getParkList')->name('selectPark');
 
 Route::get('danhsachchodoxe','User\slotList@getSlotList');
 
+Route::get('nguoidung','User\account@getAccount')->name('account');
+Route::post('nguoidung','User\account@postAccount')->name('editaccount');
+
+Route::get('dangky','User\book@getBook')->name('timeLong');
+
+Route::post('dangky','User\book@postBook')->name('booking');

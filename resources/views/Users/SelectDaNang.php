@@ -76,7 +76,7 @@
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
 
-           <a href='http://127.0.0.1:8000/dangnhap'><button style='width: 100px;height: 50px' type='submit' class='btn btn-success pull-right' >Tài Khoản</button></a>"
+           <a href='http://127.0.0.1:8000/nguoidung'><button style='width: 100px;height: 50px' type='submit' class='btn btn-success pull-right' >Tài Khoản</button></a>"
         <a href='http://127.0.0.1:8000/danhsachbaidoxe?id=all'><button style='width: 100px;height: 50px' type='submit' class='btn btn-success pull-right' >Bãi Đổ Xe</button></a>"
     </nav>
     </header>
