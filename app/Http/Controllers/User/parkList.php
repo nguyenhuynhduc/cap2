@@ -30,13 +30,7 @@ class parkList extends Controller
             if ($re == null) {
                 $list = DB::table('park')->get();
             } else {
-                if ($re == null) {
-                    $list = DB::table('park')->get();
-                } else {
-                    $log = DB::table('park')
-                        ->join('log', 'park.idPark', '=', 'log.idPark')
-                        ->select('park.*', 'log.idSlot')
-                        ->get();
+                    $log = DB::table('log')->get();
                     if ($log) {
                         $park = DB::table('park')
                             ->join('slot', 'park.idPark', '=', 'slot.idPark')
@@ -46,8 +40,8 @@ class parkList extends Controller
                         $arr = [];
                         foreach ($park as $item1) {
                             foreach ($log as $item2) {
-                                if ($item1->idSlot != $item2->idSlot && $item1->idPark == $item2->idPark)
-                                    break;
+                                if ( $item1->idPark == $item2->idPark)
+                                        break;
                             }
                             array_push($arr, $item1->idPark);
                         }
@@ -56,7 +50,7 @@ class parkList extends Controller
                         $list = DB::table('park')->get();
                 }
             }
-        } else {
+         else {
             if ($re == null) {
                 $list = DB::table('park')->where('city', $city)->get();
             } else {
@@ -105,7 +99,7 @@ class parkList extends Controller
                         if($count>0)
                         foreach ($park2 as $item4) {
                             foreach ($log1 as $item5) {
-                                if ($item4->idSlot != $item5->idSlot && $item4->idPark == $item5->idPark)
+                                if ( $item4->idPark == $item5->idPark)
                                     $count-=1;
                             }
                             $arr1[] = ['id' => $item3->idPark, 'count' =>$count ];

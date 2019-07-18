@@ -16,14 +16,11 @@
                 <div class="comment0">
                         <h3 style="color: lightseagreen"> Thông Tin Người Dùng</h3>
                 </div>
-                @if (isset($msg))
-                    <script type="text/javascript">alert("{{ $msg }}");</script>
+                @if (Session()->has('message'))
+                    <script type="text/javascript">alert("{{ session()->get('message') }}");</script>
                 @endif
-                <form class="form-horizontal" action="{{ route('booking') }}" enctype="multipart/form-data" method="post">
+                <form class="form-horizontal" autocomplete="off" action="{{ route('booking') }}" enctype="multipart/form-data" method="post">
                     {{ csrf_field() }}
-                    @if (isset($msg))
-                        <script type="text/javascript">alert("{{ $msg }}");</script>
-                    @endif
                 <div class="panel panel-default">
                     <div class="row">
                         <div class="col-md-6">
@@ -58,7 +55,6 @@
                 <div class="comment0">
                     <h3 style="color: lightseagreen"> Chi Tiết Đăng Ký</h3>
                 </div>
-
                     <input hidden id="idPark" name="idPark" value="{{$park->idPark}}">
                 <div class="panel panel-default">
                     <div class="row">
@@ -140,8 +136,6 @@ function tongtien() {
                 "price").innerHTML = "Tổng Tiền: "+time+" VNĐ";
             $("#cost1").val(time);
         }
-
-
     }
 
 }

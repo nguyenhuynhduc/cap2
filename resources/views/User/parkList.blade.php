@@ -55,7 +55,7 @@
                     </div>
                     <div>
                         &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-                        <a><button  style="width: 100px" class="btn btn-success pull-left">Ngắn Hạn</button></a>
+                        <a href="{{route('bookShort')}}?id={{$item->idPark}}"> <button  style="width: 100px" class="btn btn-success pull-left">Ngắn Hạn</button></a>
                         &nbsp&nbsp&nbsp&nbsp&nbsp
                         <a href="{{route('timeLong')}}?id={{$item->idPark}}"><button  style="width: 100px" class="btn btn-danger pull-right">Dài Hạn</button></a>
                     </div>

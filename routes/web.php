@@ -59,3 +59,6 @@ Route::post('nguoidung','User\account@postAccount')->name('editaccount');
 Route::get('dangky','User\book@getBook')->name('timeLong');
 
 Route::post('dangky','User\book@postBook')->name('booking');
+
+Route::get('dangkynganhan','User\bookShort@getBookShort')->name('bookShort');
+Route::post('dangkynganhan','User\bookShort@postBookShort')->name('bookingShort');
